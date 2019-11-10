@@ -1,0 +1,39 @@
+<html>
+   <head>
+   		<link rel="stylesheet" media="screen" href="static/css/bootstrap.min.css">
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <style type="text/css">
+   body {
+      background: radial-gradient(circle, #039BE5 25%, #01579b);
+   }
+
+   #form {
+     background: white;  
+     padding: 25px;
+     border: 15px solid black;
+     opacity:0.95;
+     width: 50%;
+     align-self: center;   
+   }
+
+   </style>
+   <body>
+      <div style="height: 25%"></div> 
+
+      <div align="center">
+      <div id="form">
+         <form style="width: 70%;text-align: left;"  method = "POST">
+            <p></p>
+            <p>Name <input class="form-control" type = "text" name = "Name" /></p>
+            <p>Email <input class="form-control" type = "text" name = "Email" /></p>
+            <p>Address <input class="form-control" type="text" name = "Address" /></p>
+            <p>Date <input class="form-control" type = "date"  name = "Date" /></p>
+            <p><input class="btn btn-success" type = "submit" value = "Download as docx" formaction = "http://localhost:5000/docx" />
+            <input class="btn btn-success" type = "submit" style="background-color: #f44336;" value = "Download as pdf" formaction = "http://localhost:5000/pdf" /></p>
+            <p></p>
+         </form>
+      </div>
+      </div>
+   </body>
+</html>
